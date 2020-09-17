@@ -15,7 +15,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv E162F504A20CDF158
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 sudo apt-get --assume-yes install apt-transport-https
 sudo apt-get update
-sudo apt-get --assume-yes install pritunl mongodb-org
+sudo apt-get --assume-yes install pritunl mongodb-org git
+git clone https://github.com/rodolphoescobar/nowit-vpn.git
+cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+rm -rf nowit-vpn
 sudo systemctl start pritunl mongod
 sudo systemctl enable pritunl mongod
 ```
@@ -34,8 +37,10 @@ EOF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv E162F504A20CDF15827F718D4B7C549A058F8B6B
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 sudo apt-get update
-sudo apt-get --assume-yes install pritunl mongodb-server
-
+sudo apt-get --assume-yes install pritunl mongodb-server git
+git clone https://github.com/rodolphoescobar/nowit-vpn.git
+cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+rm -rf nowit-vpn
 sudo systemctl start pritunl mongodb
 sudo systemctl enable pritunl mongodb
 ```
@@ -54,7 +59,10 @@ EOF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv E162F504A20CDF15827F718D4B7C549A058F8B6B
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 sudo apt-get update
-sudo apt-get --assume-yes install pritunl mongodb-server
+sudo apt-get --assume-yes install pritunl mongodb-server git
+git clone https://github.com/rodolphoescobar/nowit-vpn.git
+cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+rm -rf nowit-vpn
 sudo systemctl start pritunl mongodb
 sudo systemctl enable pritunl mongodb
 ```
