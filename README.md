@@ -1,8 +1,10 @@
-# pritunl: enterprise vpn server
+# nowIT VPN: enterprise vpn server
 
-### ubuntu xenial
+### ubuntu xenial - DigitalOcean User Data
 
 ```bash
+#!/bin/bash
+
 sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list << EOF
 deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse
 EOF
@@ -23,9 +25,11 @@ sudo systemctl start pritunl mongod
 sudo systemctl enable pritunl mongod
 ```
 
-### ubuntu bionic
+### ubuntu bionic - DigitalOcean User Data
 
 ```bash
+#!/bin/bash
+
 sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list << EOF
 deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse
 EOF
@@ -45,9 +49,11 @@ sudo systemctl start pritunl mongodb
 sudo systemctl enable pritunl mongodb
 ```
 
-### ubuntu focal
+### ubuntu focal - DigitalOcean User Data
 
 ```bash
+#!/bin/bash
+
 sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list << EOF
 deb https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.2 multiverse
 EOF
