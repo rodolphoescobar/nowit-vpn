@@ -19,7 +19,7 @@ sudo apt-get --assume-yes install apt-transport-https
 sudo apt-get update
 sudo apt-get --assume-yes install pritunl mongodb-org git
 git clone https://github.com/rodolphoescobar/nowit-vpn.git
-cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+cp -avr ./nowit-vpn/. /usr/share/pritunl/www/.
 rm -rf nowit-vpn
 sudo systemctl start pritunl mongod
 sudo systemctl enable pritunl mongod
@@ -43,7 +43,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get --assume-yes install pritunl mongodb-server git
 git clone https://github.com/rodolphoescobar/nowit-vpn.git
-cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+cp -avr ./nowit-vpn/. /usr/share/pritunl/www/.
 rm -rf nowit-vpn
 sudo systemctl start pritunl mongodb
 sudo systemctl enable pritunl mongodb
@@ -67,7 +67,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get --assume-yes install pritunl mongodb-server git
 git clone https://github.com/rodolphoescobar/nowit-vpn.git
-cp -avr ./nowit-vpn/ /usr/share/pritunl/www
+cp -avr ./nowit-vpn/. /usr/share/pritunl/www/.
 rm -rf nowit-vpn
 sudo systemctl start pritunl mongodb
 sudo systemctl enable pritunl mongodb
